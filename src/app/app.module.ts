@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreditoElektraEjemplosComponent } from './credito-elektra-ejemplos/credito-elektra-ejemplos.component';
 import { CreditoElektraDetallesComponent } from './credito-elektra-detalles/credito-elektra-detalles.component';
+import { QrComponent } from './qr/qr.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreditoElektraEjemplosComponent,
-    CreditoElektraDetallesComponent
+    CreditoElektraDetallesComponent,
+    QrComponent
   ],
   imports: [
     BrowserModule,
