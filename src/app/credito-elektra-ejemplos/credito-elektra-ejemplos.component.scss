@@ -97,12 +97,12 @@
 
 .descripcionEjemplo {
     font-family: "Avenir_Next_Demi_Bold";
-    font-size: 1.5pc;
+    font-size: 1.8em;
     text-align: center;
 }
 
 .referencia {
-    font-size: 1.3pc;
+    font-size: 1.5em;
     text-align: center;
     padding-bottom: 5px;
 }
@@ -118,44 +118,64 @@
     background-color: #00a648;
     color: white;
     border-radius: 50px;
-    font-size: 2pc;
-    height: 75px;
+    font-size: 1.5em;
+    height: 55px;
     width: 365px;
-    font-family: 'Avenir_Next_Bold';
+    font-family: "Avenir_Next_Bold";
     letter-spacing: 0.5px;
+}
+
+.mat-divider {
+    display: block;
+    border-top-width: 2px;
+    border-top-style: solid;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #00a648;
 }
 
 @media screen and (max-width:1482px) {
     .shadow {
         background-position-y: -175px;
+        transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
     }
 }
 @media screen and (max-width:1096px) {
     .shadow {
         background-position: center;
+        transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
 
     }
 }
 @media screen and (max-width:768px) {
     .shadow {
-        height: 600px;
+        height: 500px;
+        transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
     }
 }
 @media screen and (max-width:425px) {
     .shadow {
         height: 400px;
+        transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+    }
+
+    .contenedorContenido {
+        font-size: 12px;
     }
 }
-
-
-// @media screen and (max-width:1482px) {
-//     .shadow {
-//         background-position-y: -175px;
-//     }
-// }
-// @media screen and (max-width:1096px) {
-//     .shadow {
-//         background-position: center;
-
-//     }
-// }
+@media screen and (max-width:375px) {
+    .shadow {
+        height: 300px;
+        transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+    }
+}
