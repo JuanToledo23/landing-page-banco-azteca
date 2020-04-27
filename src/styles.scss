@@ -70,10 +70,6 @@ b {
 .w50 {
   width: 50%;
   float: left;
-<<<<<<< HEAD
-=======
-
->>>>>>> 680ff8e0cb18f14e3a1de96d1645ae04a9dce9e4
 }
 
 .divGrowEjemplos {
@@ -96,6 +92,50 @@ b {
   margin: 20px 0px;
 
 }
+
+// TABS
+
+.mat-tab-label {
+  width: 24.5%;
+  background-color: #d8d8d8;
+  opacity: 1 !important;
+}
+
+.mat-tab-labels {
+  justify-content: space-between;
+}
+
+.mat-tab-nav-bar, .mat-tab-header {
+  border-bottom: unset !important;
+}
+
+.mat-tab-label-active {
+  background-color: #333333 !important;
+  color: white !important;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.mat-tab-header {
+  overflow: unset !important;
+}
+
+.mat-tab-label-container {
+  overflow: unset !important;
+}
+
+.mat-ink-bar {
+  background-color: unset !important;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+  line-height: 16px !important;
+}
+
 
 @media screen and (max-width:700px) {
   div.name{display: none;}

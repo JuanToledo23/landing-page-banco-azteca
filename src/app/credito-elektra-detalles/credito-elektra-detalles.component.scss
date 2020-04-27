@@ -60,7 +60,7 @@ body{
 		transition: all 0.3s ease-out;
 		-moz-transition: all 0.3s ease-out;
 		-webkit-transition: all 0.3s ease-out;
-
+		border-radius: unset;
 	}
 
 	.btnCuadrado.vC{float:right;}
@@ -296,7 +296,6 @@ body{
 		text-align:center;
 		font-size:1.1em;
 	}
-
 
 	@media screen and (max-width:930px){
 		.nombreTelefono{
