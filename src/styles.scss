@@ -1,4 +1,6 @@
 @import 'assets/scss/fonts';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import "~@angular/material/theming";
@@ -43,13 +45,105 @@ body {
   border: none;
   outline: none;
   font-family: "Avenir_Next_Regular";
+  color: #333333;
 }
 
 b {
   font-family: "Avenir_Next_Demi_Bold";
 }
 
+
+// OWL CAROUSEL
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #00a648 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  border: solid #00a648 3px !important;
+  background: unset !important;
+}
+
 .clear {
   clear: both;
 }
 
+.w50 {
+  width: 50%;
+  float: left;
+}
+
+.divGrowEjemplos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 10px;
+}
+
+.divCol2Ejemplos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.divCol2Ejemplos > .col2, .divGrowEjemplos > .col2 { 
+  width: 48%;
+  // margin: 15px 1%; 
+  margin: 20px 0px;
+
+}
+
+// TABS
+
+.mat-tab-label {
+  width: 24.5%;
+  background-color: #d8d8d8;
+  opacity: 1 !important;
+}
+
+.mat-tab-labels {
+  justify-content: space-between;
+}
+
+.mat-tab-nav-bar, .mat-tab-header {
+  border-bottom: unset !important;
+}
+
+.mat-tab-label-active {
+  background-color: #333333 !important;
+  color: white !important;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.mat-tab-header {
+  overflow: unset !important;
+}
+
+.mat-tab-label-container {
+  overflow: unset !important;
+}
+
+.mat-ink-bar {
+  background-color: unset !important;
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+  line-height: 16px !important;
+}
+
+
+@media screen and (max-width:700px) {
+  div.name{display: none;}
+  .divCol2Ejemplos > .col2, .divGrowEjemplos > .col2 { 
+    width: 98%;
+    border-left: unset !important;
+  }
+  .divGrowEjemplos {
+    display: unset;
+  }
+}
