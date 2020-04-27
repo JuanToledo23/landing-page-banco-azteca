@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CreditoElektraEjemplosComponent } from './credito-elektra-ejemplos/credito-elektra-ejemplos.component';
 import { CreditoElektraDetallesComponent } from './credito-elektra-detalles/credito-elektra-detalles.component';
+import { QrComponent } from './qr/qr.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreditoElektraEjemplosComponent,
-    CreditoElektraDetallesComponent
+    CreditoElektraDetallesComponent,
+    QrComponent
   ],
   imports: [
     BrowserModule,

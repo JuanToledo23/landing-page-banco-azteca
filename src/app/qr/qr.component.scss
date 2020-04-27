@@ -1,0 +1,72 @@
+
+    html,
+    body{
+        width:100%;
+        height:100%;  
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family:'Avenir_Next_Regular';
+    }
+
+    b{font-family:'Avenir_Next_Demi_Bold';}
+
+    .contenedorGeneral {
+        width: 90%;
+        max-width: 860px;
+        min-width: 360px;
+        margin: 0 auto;
+    }
+
+	.titulo_encabezado{
+		text-align:center;
+		font-size:3.5em;
+		color:#ffffff;
+		padding:20px 0px 20px 0px;
+		background-color:#00a940;
+		transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+	}
+
+	@media screen and (max-width:950px){
+		.titulo_encabezado{
+			font-size:2.5em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+    }
+    
+	@media screen and (max-width:874px){
+		.titulo_encabezado{
+			font-size:2em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+	}
+
+
+	@media screen and (max-width:550px){
+		.titulo_encabezado{
+			font-size:1.6em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+
+	}
+
+	@media screen and (max-width:440px){
+		.titulo_encabezado{
+			font-size:1.4em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+
+	}
