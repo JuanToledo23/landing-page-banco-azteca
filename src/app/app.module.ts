@@ -11,13 +11,17 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CreditoElektraEjemplosComponent } from './credito-elektra-ejemplos/credito-elektra-ejemplos.component';
 import { CreditoElektraDetallesComponent } from './credito-elektra-detalles/credito-elektra-detalles.component';
 import { QrComponent } from './qr/qr.component';
+import { ErrorCargaComponent } from './error-carga/error-carga.component';
+import { ErrorConexionComponent } from './error-conexion/error-conexion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreditoElektraEjemplosComponent,
     CreditoElektraDetallesComponent,
-    QrComponent
+    QrComponent,
+    ErrorCargaComponent,
+    ErrorConexionComponent
   ],
   imports: [
     BrowserModule,

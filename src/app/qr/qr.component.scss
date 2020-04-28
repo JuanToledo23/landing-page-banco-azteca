@@ -12,7 +12,14 @@
         font-family:'Avenir_Next_Regular';
     }
 
-    b{font-family:'Avenir_Next_Demi_Bold';}
+	b{font-family:'Avenir_Next_Demi_Bold';}
+	
+
+	.wq50{
+		width:50%;
+		float:left;
+	}
+	.clear{clear: both;}
 
     .contenedorGeneral {
         width: 90%;
@@ -27,11 +34,149 @@
 		color:#ffffff;
 		padding:20px 0px 20px 0px;
 		background-color:#00a940;
+		position: relative;
 		transition: all 0.3s ease-out;
 		-moz-transition: all 0.3s ease-out;
 		-webkit-transition: all 0.3s ease-out;
 	}
 
+	.imagenElektra{
+		width:100%;
+		height:90px;
+		position: relative;
+	}
+    .ct_elektra{
+		display: block;
+		position: absolute;
+		width: 200px;
+		right: 0px;
+		top:0px;
+		padding:10px;
+		background-color: #ffdc00;
+	}
+    .ct_elektra img{
+		width:100%;
+	}
+	.felicidades{
+		text-align:center;
+		font-size:4em;
+		color:#00a940;
+		font-family: "Avenir_Next_Demi_Bold";
+		transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+	}
+	.leyenda_beneficios {
+		text-align: center;
+		font-size: 2em;
+		transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+	}
+
+	.apostrofe:after{
+		content: "1";
+		position: relative;
+		top: -12px;
+		left: 0px;
+		font-size:0.5em; 
+	}
+	.bloqueQr {
+		width:90%;
+		margin: 30px auto;
+		background-color: #ffffff;
+		border: 1px solid #edeff0;
+		color: #424242;
+		border-radius:4px 4px 4px 4px;
+		padding: 20px;
+		-moz-box-shadow: 0 5px 15px rgba(17, 17, 17, 0.2);
+		-webkit-box-shadow: 0 5px 15px rgba(17, 17, 17, 0.2);
+		box-shadow: 0 5px 15px rgba(17, 17, 17, 0.2);
+	}
+
+	.tb_cliente_unico{
+		width: 100%;
+		height: 100%;
+		display: table;
+		vertical-align: middle;
+		margin: 28.4% auto;
+	}
+	.cll_cliente_unico{
+		text-align: center;
+		vertical-align: middle;
+		display: table-cell;
+	}
+	
+	.contenedor_qr{
+		-moz-box-shadow: 0 5px 15px rgba(17, 17, 17, 0.2);
+		-webkit-box-shadow: 0 5px 15px rgba(17, 17, 17, 0.2);
+		box-shadow: 0 5px 15px rgba(17, 17, 17, 0.2);
+	} 
+
+	.contenedor_qr img{width:100%;}
+	
+	.titulo_cliente_unico,
+	.titulo_sku{
+		font-size: 1.6em;
+	}
+
+	.numero_cliente,
+	.numero_sku{
+		font-size: 1.6em;
+	}
+
+	.leyenda_qr {
+		text-align: center;
+		font-size: 1.6em;
+	}
+
+	.apostrofe_cuatro:after{
+		content: "4";
+		position: relative;
+		top: -12px;
+		left: 0px;
+		font-size:0.5em; 
+	}
+	.terminos_y_condiciones {
+	   font-size: 0.8em;
+		text-align: justify;
+		overflow: auto;
+		margin-bottom: 15px;
+		padding-bottom: 0px;
+		width: 100%;
+	}
+	.condiciones_Uno{margin-top:30px;}
+	.condiciones_Dos{margin-top:20px;}
+	.condiciones_Tres{
+		margin-top:20px;
+		font-size:0.7em;
+		font-style: italic;
+	}
+
+	.btn_guarda_codigo{
+		text-decoration: none;
+		background-color: #00a940;
+		border: 2px solid #00a940;
+		color: #ffffff;
+		padding: 9px 9px;
+		min-width: 280px;
+		display: inline-block;
+		outline: none;
+		border-radius: 40px 40px 40px 40px;
+		font-size: 1.4em;
+		transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		font-family: "Avenir_Next_Demi_Bold";
+		margin: 0 auto;
+		display: block;
+		margin-bottom:40px;
+		margin-top:40px;
+	}
+	
+	
+
+	
 	@media screen and (max-width:950px){
 		.titulo_encabezado{
 			font-size:2.5em;
@@ -39,7 +184,65 @@
 			-moz-transition: all 0.3s ease-out;
 			-webkit-transition: all 0.3s ease-out;
 		}
-    }
+	}
+	
+	@media screen and (max-width:760px){
+		.felicidades{
+			font-size:3em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+		.leyenda_beneficios{
+			font-size:1.6em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+		.titulo_cliente_unico{
+			font-size:1.2em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out; 
+		}
+		.numero_cliente{
+			font-size:1.3em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out; 
+		}
+
+		.titulo_sku{
+			font-size:1.2em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out; 
+
+		}
+
+		.numero_sku{
+			font-size:1.3em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out; 
+		}
+
+		.leyenda_qr{
+			font-size: 1.3em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+
+
+	}
+
+	@media screen and (max-width:890px){
+		.tb_cliente_unico{
+			margin: 23.4% auto;
+		}
+
+	}
     
 	@media screen and (max-width:874px){
 		.titulo_encabezado{
@@ -49,7 +252,25 @@
 			-webkit-transition: all 0.3s ease-out;
 		}
 	}
+	@media screen and (max-width:600px){
+		.leyenda_beneficios{
+			font-size:1.3em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+		.tb_cliente_unico{
+			margin: 20.4% auto;
+		}
+		.leyenda_qr{
+			font-size: 1em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+		
 
+	}
 
 	@media screen and (max-width:550px){
 		.titulo_encabezado{
@@ -61,6 +282,29 @@
 
 	}
 
+	@media screen and (max-width:500px){
+		.leyenda_beneficios{
+			font-size:1em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+
+		.wq50{
+			width:100%;
+		}
+
+		.bloqueQr{
+			width:80%;
+		}
+
+		.terminos_y_condiciones{
+			width:80%;
+			margin:0 auto;
+		}
+
+	}
+
 	@media screen and (max-width:440px){
 		.titulo_encabezado{
 			font-size:1.4em;
@@ -68,5 +312,29 @@
 			-moz-transition: all 0.3s ease-out;
 			-webkit-transition: all 0.3s ease-out;
 		}
+		.ct_elektra{
+			width:100%;
+		}
+		.ct_elektra img{
+			width:200px;
+			display:block;
+			margin:0 auto;
+			
+		}
 
+		.leyenda_qr{
+			font-size:0.8em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+
+		.leyenda_beneficios{
+			font-size:0.8em;
+			transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+		}
+
+		
 	}
