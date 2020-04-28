@@ -22,19 +22,19 @@
                     <div class="porEjemplo bold">
                         Por ejemplo:
                     </div>
-                    <div class="divGrowEjemplos">
+                    <div class="divGrowEjemplos" (window:resize)="onResize($event.target.innerWidth)">
                         <div class="col2">
                             <div class="descripcionEjemplo">
                                 Motorola Moto E6 Play <br>
-                                32GB Movistar<sup style="font-size: 1.2pc;margin-left: 5px;">3</sup> <br>
+                                32GB Movistar<sup style="margin-left: 5px;">3</sup> <br>
                                 Precio para ti: $2,429
                             </div>
                         </div>
-                        <mat-divider></mat-divider>
-                        <div class="col2" style="border-left: solid 6px #17a54d;">
+                        <mat-divider *ngIf="barra"></mat-divider>
+                        <div class="col2" style="border-left: solid 4px #17a54d;">
                             <div class="descripcionEjemplo" style="line-height: 1.1;">
                                 Llévatelo a sólo <br>
-                                <span style="font-size: 2.4pc;">$60 sem <sup style="font-size: 1.2pc; margin-left: -10px;">2</sup></span> <br>
+                                <span style="font-size: 2em;">$60 sem <sup style="font-size: 0.5em; margin-left: -10px;">2</sup></span> <br>
                                 Pago inicial de $0
                             </div>
                         </div>
@@ -64,14 +64,15 @@
                         <div class="col2">
                             <div class="descripcionEjemplo">
                                 Motorola G8 Play <br>
-                                32GB AT&T<sup style="font-size: 1.2pc;margin-left: 5px;">3</sup> <br>
+                                32GB AT&T<sup style="margin-left: 5px;">3</sup> <br>
                                 Precio para ti: $3,599
                             </div>
                         </div>
+                        <mat-divider *ngIf="barra"></mat-divider>
                         <div class="col2" style="border-left: solid 6px #17a54d;">
                             <div class="descripcionEjemplo" style="line-height: 1.1;">
                                 Llévatelo a sólo <br>
-                                <span style="font-size: 3pc;">$60 sem <sup style="font-size: 1.2pc; margin-left: -10px;">2</sup></span> <br>
+                                <span style="font-size: 2em;">$60 sem <sup style="font-size: 0.5em; margin-left: -10px;">2</sup></span> <br>
                                 Pago inicial de $0
                             </div>
                         </div>
@@ -101,14 +102,15 @@
                         <div class="col2">
                             <div class="descripcionEjemplo">
                                 Huawei Y9s <br>
-                                128GB Movistar<sup style="font-size: 1.2pc;margin-left: 5px;">3</sup> <br>
+                                128GB Movistar<sup style="margin-left: 5px;">3</sup> <br>
                                 Precio para ti: $6,299
                             </div>
                         </div>
+                        <mat-divider *ngIf="barra"></mat-divider>
                         <div class="col2" style="border-left: solid 6px #17a54d;">
                             <div class="descripcionEjemplo" style="line-height: 1.1;">
                                 Llévatelo a sólo <br>
-                                <span style="font-size: 3pc;">$80 sem <sup style="font-size: 1.2pc; margin-left: -10px;">2</sup></span> <br>
+                                <span style="font-size: 2em;">$80 sem <sup style="font-size: 0.5em; margin-left: -10px;">2</sup></span> <br>
                                 Pago inicial de $0
                             </div>
                         </div>

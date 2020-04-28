@@ -35,7 +35,17 @@ export class CreditoElektraEjemplosComponent implements OnInit {
     nav: false
   };
 
+  barra = false;
   ngOnInit(): void {
+    const innerWidth = window.innerWidth;
+    this.onResize(innerWidth);
+  }
+
+  onResize(width) {
+    this.barra = false;
+    if (width <= 700) {
+      this.barra = true;
+    }
   }
 
 }
