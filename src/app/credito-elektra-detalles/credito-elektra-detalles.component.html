@@ -24,13 +24,13 @@
 				<div class="tabContenido">
 					<div class="cllContenido">
 						<div class="modeloTelefono">
-							<img src="assets/img/telefono1.png">
+							<img [src]="articuloSeleccionado.img">
 						</div>
 
 						<div class="precioTotal">
 							<div class="titulo_precio_total">Total a pagar a crédito: </div>
 							<div class="signoPesos">$</div>
-							<div class="precio">4,320</div>
+							<div class="precio">{{articuloSeleccionado.totalPagar}}</div>
 						</div>
 					</div>
 				</div>
@@ -40,8 +40,8 @@
 				<div class="tabContenido">
 					<div class="cllContenido">
 						<div class="nombreTelefono">
-							<div><b>Motorola Moto E6 Play</b></div>
-							<div><b>32GB Movistar - Negro</b></div>
+							<div><b>{{articuloSeleccionado.nombre}}</b></div>
+							<div><b>{{articuloSeleccionado.marca}}</b></div>
 						</div>
 
 					    <div class="titulo_te_reconocemos">
@@ -67,7 +67,7 @@
 
 									<div class="precioUno">
 										<span class="linea">
-											<span class="signoPesosDos">$</span> <span>70</span>
+											<span class="signoPesosDos">$</span> <span>{{articuloSeleccionado.descuentoRenovacionAnterior}}</span>
 										</span>
 									</div>
 
@@ -75,7 +75,7 @@
 										
 									<div class="precioDos">
 										<span> $</span> 
-										<span>60</span>
+										<span>{{articuloSeleccionado.descuentoRenovacionActual}}</span>
 									</div>
 								</div>
 							</div>
@@ -83,19 +83,19 @@
 
 						<div class="precioContado">
 							Precio de contado: 
-						    <span class="signoPesosDos">$</span> <span>2,500</span>
+						    <span class="signoPesosDos">$</span> <span>{{articuloSeleccionado.precioContado}}</span>
 						</div>
 
 						<div class="precioParaTi">
 							Precio para ti: de 
 							<span class="linea">
-								<span class="signoPesosDos">$</span> <span>2,671</span>
+								<span class="signoPesosDos">$</span> <span>{{articuloSeleccionado.tuPrecioNormal}}</span>
 							</span>
 						</div>
 						
 						<div class="a_solo">
 							a sólo 
-							<span class="signoPesosTres">$</span><span>2,429</span>
+							<span class="signoPesosTres">$</span><span>{{articuloSeleccionado.tuPrecioReal}}</span>
 						</div><br>
 
 						<button mat-flat-button class="btnCuadrado vC">Ver característica</button>
@@ -112,11 +112,7 @@
 				<div class="w50">
 					<nav>
 						<ul>
-							<li>Pantalla de 6.5 Pulgadas</li>
-							<li>
-								Cámara trasera de 48 Mpx + 8 Mpx <br>
-								+ 2 Mpx y frontal de 16 Mpx
-							</li>
+							<li *ngFor="let caracteristica1 of articuloSeleccionado.caracteristicas1">{{caracteristica1}}</li>
 						</ul>
 					</nav>
 			    </div>
@@ -124,11 +120,7 @@
                 <div class="w50">
 					<nav>
 						<ul>
-							<li>Batería de 4000 mAh</li>
-							<li>
-							Memoria interna de 128 GB, <br>
-							RAM 6 GB
-							</li>
+							<li *ngFor="let caracteristica2 of articuloSeleccionado.caracteristicas2">{{caracteristica2}}</li>
 						</ul>
 					</nav>
 				</div>
@@ -154,7 +146,8 @@
 			</div><br>
 
 			<mat-tab-group>
-			    <mat-tab label="Ligero $29">
+			    <mat-tab>
+					<ng-template mat-tab-label>Ligero <br> $29</ng-template>
 					<div class="lista_planes">
 						<div class="bloque_lista">
 							<div><img src="assets/img/icons/telefono.svg"></div>
@@ -180,7 +173,8 @@
 					</div>
 				</mat-tab>
 
-				<mat-tab label="Básico $40">
+				<mat-tab>
+					<ng-template mat-tab-label>Básico <br> $40</ng-template>
 					<div class="lista_planes">
 						<div class="bloque_lista">
 							<div><img src="assets/img/icons/telefono.svg"></div>
@@ -208,7 +202,8 @@
 					</div>
 				</mat-tab>
 
-				<mat-tab label="Total $60">
+				<mat-tab>
+					<ng-template mat-tab-label>Total <br> $60</ng-template>
 						<div class="lista_planes">
 							<div class="bloque_lista">
 								<div><img src="assets/img/icons/telefono.svg"></div>
@@ -242,7 +237,8 @@
 						</div>
 				</mat-tab>
 
-				<mat-tab label="Plus ilimitado $80">
+				<mat-tab>
+					<ng-template mat-tab-label>Plus ilimitado <br> $80</ng-template>
 						<div class="lista_planes">
 							<div class="bloque_lista">
 								<div><img src="assets/img/icons/telefono.svg"></div>
