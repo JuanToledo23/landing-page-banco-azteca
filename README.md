@@ -3,6 +3,7 @@
 ## Información del proyecto 
 
 Utilizar version de [NodeJS 15.14.0](https://nodejs.org/dist/v15.14.0/)
+
 Maquetado publicitario tipo "landing page" para Banco Azteca responsivo e interactivo.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.2.
