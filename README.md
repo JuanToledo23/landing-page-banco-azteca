@@ -1,4 +1,4 @@
-# PWATelefonia
+# Landing Page Banco Azteca
 
 ## Maquetado publicitario tipo "landing page" para Banco Azteca responsivo e interactivo
 
